@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <button class="howTo-btn">How to play ?</button>
+
+  <div class="popUpContainerHowto">
+    <ul>
+      <li>User can click at the image to hear to key of drum</li>
+      <li>When user ready click at Listen to th Key button</li>
+      <li>User will hear 3 keys of drum</li>
+      <li>User must press key of drum following ryhtm before</li>
+    </ul>
+    <button class="closeHowto-btn">Let's Enjoy</button>
+  </div>
+
+  <div class="popUpContainerLose">
+    <h1>Wrong Key</h1>
+    <p>press Listen to the Key button first</p>
+    <button onclick="reloadPage()">try again</button>
+  </div>
+
+  <div class="popUpContainerWin">
+    <h1>You Win!!</h1>
+    <p>🎉🎉🎉🎉🎉</p>
+    <button onclick="reloadPage()">try again</button>
+  </div>
+
+  <h1 id="title">Drum 🥁 Kit</h1>
+    <button onclick="triggerSound()" class="start-btn">Listen to the Key</button>
+  <div class="set">
+    <button class="w drum">w</button>
+    <button class="a drum">a</button>
+    <button class="s drum">s</button>
+    <button class="d drum">d</button>
+    <button class="j drum">j</button>
+    <button class="k drum">k</button>
+    <button class="l drum">l</button>
+  </div>
+
+
+  <footer>
+    Made with ❤️ in London.
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
